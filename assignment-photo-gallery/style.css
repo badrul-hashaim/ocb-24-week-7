@@ -2,6 +2,38 @@
     box-sizing: border-box;
 }
 
-query-box {
+body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#img-list {
+    width: 95%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header {
+    margin-top: 10px;
+    width: 95%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    border-radius: 15px;
+}
+
+.query-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
