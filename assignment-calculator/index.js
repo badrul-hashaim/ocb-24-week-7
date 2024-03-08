@@ -1,4 +1,4 @@
-var curentNumber = "";
+var currentNumber = "";
 var prevNumber = "";
 var currentOperation = "0";
 var answer = 0;
@@ -58,18 +58,18 @@ function keyFilter(key) {
 }
 
 function clickNumber(click) {
-    curentNumber += click;
-    displayNumber(curentNumber);
+    currentNumber += click;
+    displayNumber(currentNumber);
 }
 
 function clickOperation(click) {
-    prevNumber = curentNumber;
-    curentNumber = "";
+    prevNumber = currentNumber;
+    currentNumber = "";
     currentOperation = click;
 }
 
 function clickSubmit() {
-    curentNumber = calculate(prevNumber, curentNumber, currentOperation);
+    currentNumber = calculate(prevNumber, currentNumber, currentOperation);
     prevNumber = "";
     currentOperation = "0";
 }
@@ -80,7 +80,7 @@ function displayNumber(number) {
 }
 
 function reset() {
-    curentNumber = "";
+    currentNumber = "";
     prevNumber = "";
     currentOperation = "0";
     answer = 0;
